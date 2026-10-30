@@ -1,0 +1,4 @@
+Input: D:\学习\cv-classification-detection\src\bus.jpg
+Top 1: truck 0.5868
+Top 2: ship 0.3883
+Top 3: automobile 0.0185

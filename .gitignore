@@ -1,0 +1,81 @@
+# ====================================
+# Python
+# ====================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.ipynb_checkpoints/
+
+# ====================================
+# Environments
+# ====================================
+.venv/
+venv/
+env/
+ENV/
+.python-version
+conda-meta/
+*.conda
+
+# ====================================
+# IDE / OS
+# ====================================
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ====================================
+# Testing / tooling caches
+# ====================================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+
+# ====================================
+# Datasets (download or place locally)
+# ====================================
+data/
+datasets/
+src/data/
+src/datasets/
+runs/
+
+# ====================================
+# Model weights
+# Kept out of git: re-create them by running the training scripts.
+# ====================================
+*.pt
+*.pth
+*.onnx
+*.torchscript
+*.engine
+*.tflite
+
+# ====================================
+# Generated inference output
+# figures/, logs/ and outputs/yolo/predictions/finetuned_demo/ ARE tracked,
+# because README.md embeds those images. Everything below is safe to drop.
+# ====================================
+outputs/predictions/detection/
+outputs/yolo/predictions/bus_demo/
+
+# Stray duplicate output tree from an earlier run
+output/
+
+# ====================================
+# Temp
+# ====================================
+*.tmp
+*.bak
+*.zip

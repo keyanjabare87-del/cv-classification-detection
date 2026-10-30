@@ -1,0 +1,21 @@
+# Computer Vision: Classification & Detection — dependencies
+# Python 3.11
+#
+# PyTorch is intentionally NOT pinned here: install the wheel that matches your
+# CUDA driver first, e.g.
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# A CPU-only wheel installs fine but silently disables GPU training.
+
+# --- Deep learning ---
+torch>=2.0            # predict.py uses torch.load(..., weights_only=True)
+torchvision>=0.15     # resnet18, CIFAR10, transforms
+ultralytics>=8.0      # YOLOv8 training and inference
+
+# --- Metrics ---
+scikit-learn>=1.2     # accuracy_score, f1_score, confusion_matrix, classification_report
+
+# --- Data / plotting / IO ---
+numpy>=1.23
+matplotlib>=3.6
+Pillow>=9.0           # image loading in predict.py
+tqdm>=4.65            # training progress bars
